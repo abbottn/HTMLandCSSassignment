@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Flight School</title>
+    </head>
+    <body>
+        <b>FLIGHT SCHOOL</b>
+        <p>
+            <label for="studentname">Student name</label>
+            <span>:</span>
+            <input type="text" required id="studentname">
+            <label for="date-enrolled">Date enrolled</label>
+            <span>:</span>
+            <input type="date" id="date-enrolled">
+        </p>
+        <p>
+            <label for="studentid">Student id</label>
+            <span>:</span>
+            <input type="number" min="1000"   max="9999"  id="studentid">
+            <label for="studentemail">Student email</label>
+            <span>:</span>
+            <input type="email" id="studentemail">
+        </p>
+        <p>
+            <label for="studentpassword">Account password</label>
+            <span>:</span>
+            <input type="password" id="studentpassword">
+        </p>
+
+        <form acion="/" method="POST">
+            <div>
+                <P>SINGLE ENGINE PROP</P>  
+                <select name="plane">
+                    <option value="Cessna">Cessna</option>
+                    <option value="Beechcraft">Beechcraft</option>
+                    <option value="Piper">Piper</option>
+                    <option value="Mooney">Mooney</option>
+                </select>
+            </div>
+            
+
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">Communications System</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="radio" name="comm"  value="SELCAL"></td>
+                            <td><input type="radio" name="comm"  value="SATCOM"></td>
+                            <td><input type="radio" name="comm"  value="ACARS"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>SELCAL</td>
+                            <td>SATCOM</td>
+                            <td>ACARS</td>
+                        </tr> 
+                    </tfoot>
+                </table>
+            </p>
+            <p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Navigation System</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="nav"  value="VFR"></td>
+                            <td><input type="checkbox" name="nav"  value="OMEGA"></td>
+                            <td><input type="checkbox" name="nav"  value="VOR"></td>
+                            <td><input type="checkbox" name="nav"  value="NDB"></td>
+
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>VFR</td>
+                            <td>OMEGA</td>
+                            <td>VOR</td>
+                            <td>NDB</td>
+                        </tr> 
+                    </tfoot>
+                </table>
+            </p>
+            <h3>Questions/Comments?</h3>
+            <textarea name="studentcomment" id="comments" cols="30" rows="10">Enter comments here
+
+            </textarea>
+            <p>
+                <input type="submit" value="Enroll">
+            </p>
+            
+        </form>
+    </body>
+</html>
+    
