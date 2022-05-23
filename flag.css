@@ -1,0 +1,13 @@
+table td {
+    color: transparent;
+}
+tr:nth-child(2n+1) {
+    background-color: red;
+}
+tr:nth-last-child(1n+7) td:nth-last-child(1n+9) {
+    background-color: blue;
+}
+tr:nth-last-child(1n+7) td:nth-last-child(1n+9):after{
+    content: '\2605';
+    color: white;
+}
