@@ -1,0 +1,6 @@
+p:before {
+    content: 'monkeys';
+}
+p::after {
+    content: 'good climbers';
+}

@@ -1,8 +1,34 @@
-body, .outline-container {
-    counter-reset: section; /* Set a counter named 'section', and it`s initial value is 0. */
+body, .overall-group {
+    counter-reset: position; /* Set a counter named 'position', and it`s initial value is 0. */
+  }
+  
+  p#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
   }
 
-  h3.outline::before {
-    counter-increment: section; /* Increment the value of section counter by 1 */
-    content: counter(section) '. '; /* Display the value of section counter */
+  h3.detail::before {
+    counter-increment: position; /* Increment the value of position counter by 1 */
+    content: counter(position) '. '; /* Display the value of position counter */
   }
+
+  p.password1::before {
+    content: 'ghiouH3l';
+  }
+
+  p.password2::before {
+    content: '@hi3hg5ldnq!';
+  }
+
+  p#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+
+  
