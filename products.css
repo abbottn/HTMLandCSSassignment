@@ -1,0 +1,26 @@
+div.products {
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 768px) {
+    div.products {
+        background-color: blueviolet;
+    }
+    td#col2 {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+    div.products {
+        background-color: blue;
+    }
+    td#col2 {
+        display: none;
+    }
+    td#col3 {
+        display: none;
+    }
+}

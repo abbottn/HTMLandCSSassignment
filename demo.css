@@ -1,6 +1,22 @@
-p:before {
-    content: 'monkeys';
-}
-p::after {
-    content: 'good climbers';
-}
+div.boxed {
+    border: 1px solid #333;
+    background-color: #aaa;
+    transition: background-color 2000ms linear 50ms;
+  }
+
+  @media screen and (max-width: 768px){
+    div.boxed {
+      background-color: rgb(52, 148, 165);
+    }
+    div.boxed::after {
+      content: ' (tablet)'
+    }
+  }
+  @media screen and (max-width: 480px){
+    div.boxed {
+      background-color: #0a0;
+    }
+    div.boxed::after {
+      content: ' (mobile)'
+    }
+  }
