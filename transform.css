@@ -1,9 +1,6 @@
 .ball {
-    transform: translateX(10px);
-    transform: translateX(10px);
-    transform: translateX(10px);
-    transform: translateX(10px);
-    transform: translateX(10px);
-
-
+    position: absolute;
+    left: 700px;
+    top: 300px;
+    transform: translateX(100px) translateY(100px) scale(2,2);
 }
